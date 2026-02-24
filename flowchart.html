@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Plan</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: url('0x0.webp') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    /* Faded overlay */
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0,0,0,0.5); /* Dark overlay for fade effect */
+      z-index: 0;
+    }
+
+    header {
+      background-color: rgba(0, 51, 102, 0.85);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .content {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px;
+      background: rgba(255,255,255,0.95);
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .flowchart-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .flowchart {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .step {
+      background-color: #003366;
+      color: white;
+      padding: 15px 25px;
+      border-radius: 8px;
+      width: 300px;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+
+    .home-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #003366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+
+    .home-button:hover {
+      background-color: #0055aa;
+    }
+
+    @media (max-width: 1100px) {
+      .flowchart-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .step {
+        width: 90%;
+        font-size: 1em;
+      }
+    }
+
+    .branch-title {
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #003366;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Career & Business Plan</h1>
+</header>
+
+<div class="content">
+  <p>This flowchart shows my plan to major in Finance and pursue a career as a Management Consultant, or alternatively to start my own factory business. Each branch illustrates the steps, skills, education, and experiences I want to gain to achieve my long-term goals.</p>
+
+  <div class="flowchart-container">
+
+    <!-- Consulting Path -->
+    <div class="flowchart">
+      <div class="branch-title">Consulting Path</div>
+      <div class="step">High School: Focus on Math & Finance Clubs</div>
+      <div class="step">Bachelor's: Major in Finance at a Top University</div>
+      <div class="step">Internships: Gain experience in consulting & finance</div>
+      <div class="step">MBA: Top Business School for Strategic Management</div>
+      <div class="step">Entry-Level Consultant: Work at a top consulting firm (e.g., McKinsey, BCG)</div>
+      <div class="step">Career Growth: Senior Consultant → Manager → Partner</div>
+    </div>
+
+    <!-- Business/Factory Path -->
+ <div class="flowchart">
+  <div class="branch-title">2ND CHOICE: CEO / Business Builder Path</div>
+
+  <div class="step">
+    High School (Grades 10–12): Learn sales, basic business, and operations by doing small B2B service projects (Excel cleanup, workflows, automation)
+  </div>
+
+  <div class="step">
+    High School: Cold call / email local businesses, identify inefficiencies, sell solutions, and outsource work to freelancers per project
+  </div>
+
+  <div class="step">
+    High School: Earn first real revenue ($500–$5,000 total), build portfolio, manage freelancers, and prove entrepreneurship to colleges
+  </div>
+
+  <div class="step">
+    College (Years 1–2): Focus on B2B clients in logistics, warehouses, and small manufacturing; sell higher-value operational and automation solutions
+  </div>
+
+  <div class="step">
+    College (Years 1–2): Act as CEO and project manager — sell, scope projects, collect upfront payments, and outsource execution
+  </div>
+
+  <div class="step">
+    College (Years 2–3): Transition into small physical systems (custom racks, conveyor add-ons, semi-automated workstations)
+  </div>
+
+  <div class="step">
+    College (Years 2–3): Pre-sell projects, manage designers and builders per job, and generate consistent revenue
+  </div>
+
+  <div class="step">
+    Post-College / Late College: Scale into full custom conveyor and automation systems with repeat clients
+  </div>
+
+  <div class="step">
+    Growth Phase: Reinvest profits, standardize designs, reduce outsourcing, and increase margins
+  </div>
+
+  <div class="step">
+    Factory Stage: Open your own warehouse/factory to build systems in-house, hire employees, and scale to high revenue
+  </div>
+</div>
+
+
+  </div> 
+
+  <a class="home-button" href="index.html">Back Home</a>
+</div>
+
+</body>
+</html>

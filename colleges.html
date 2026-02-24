@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colleges</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f5f5f5; }
+    header { background-color: #003366; color: white; padding: 20px; text-align: center; }
+    h1, h2 { margin: 0 0 10px 0; }
+    .section { padding: 20px; }
+    .college { background: white; margin: 10px 0; padding: 15px; border-radius: 10px; box-shadow: 0 0 5px rgba(0,0,0,0.1); }
+    .title { font-weight: bold; font-size: 1.3em; margin-bottom: 5px; }
+    img { max-width: 100%; border-radius: 8px; margin-top: 5px; }
+    .grid { display: flex; flex-wrap: wrap; gap: 20px; }
+    .grid .item { flex: 1 1 45%; }
+    .buttons { margin-top: 20px; }
+    .buttons a { display: inline-block; margin-right: 15px; padding: 8px 16px; background-color: #003366; color: white; text-decoration: none; border-radius: 5px; }
+    .buttons a:hover { background-color: #0055aa; }
+    @media (max-width: 600px) { .grid .item { flex: 1 1 100%; } }
+    .back-button { margin: 20px 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Top Colleges</h1>
+  </header>
+
+  <div class="section">
+    <div class="grid">
+      <div class="item college">
+        <div class="title">Harvard University (IVY LEAGUE)</div>
+        <img src="Harvard_University_coat_of_arms.svg.png" alt="Harvard">
+        <p>Location: Cambridge, MA | Cost: ~$78K/year | Acceptance Rate: 4%</p>
+        <p>Strengths: Business, Law, Economics, Medicine</p>
+        <p>Recommended Majors: Finance, Economics, Pre-Law, Biology</p>
+        <p>Backstory: Harvard is the oldest university in the U.S., founded in 1636, and has a long history of producing influential leaders worldwide.</p>
+      </div>
+
+      <div class="item college">
+        <div class="title">Yale University (IVY LEAGUE)</div>
+        <img src="Yale_University_Shield_1.svg.png" alt="Yale">
+        <p>Location: New Haven, CT | Cost: ~$76K/year | Acceptance Rate: 5%</p>
+        <p>Strengths: Law, Arts, History, Medicine</p>
+        <p>Recommended Majors: Pre-Law, Political Science, Biology</p>
+        <p>Backstory: Yale, founded in 1701, is known for its outstanding law and arts programs and a strong focus on research and liberal arts education.</p>
+      </div>
+
+      <div class="item college">
+        <div class="title">Princeton University (IVY LEAGUE)</div>
+        <img src="Princeton_seal.svg.png" alt="Princeton">
+        <p>Location: Princeton, NJ | Cost: ~$75K/year | Acceptance Rate: 4%</p>
+        <p>Strengths: Economics, Public Policy, Engineering</p>
+        <p>Recommended Majors: Economics, CS, Political Science</p>
+        <p>Backstory: Princeton emphasizes undergraduate education and is renowned for its research in economics and public policy.</p>
+      </div>
+
+      <div class="item college">
+        <div class="title">Columbia University (IVY LEAGUE)</div>
+        <img src="Coat_of_Arms_of_Columbia_University.svg.png" alt="Columbia">
+        <p>Location: NYC, NY | Cost: ~$84K/year | Acceptance Rate: 5%</p>
+        <p>Strengths: Finance, Media, Law</p>
+        <p>Recommended Majors: Finance, Journalism, CS</p>
+        <p>Backstory: Columbia, located in the heart of NYC, provides excellent networking opportunities and is a leader in finance and journalism education.</p>
+      </div>
+
+      <div class="item college">
+        <div class="title">University of Pennsylvania (IVY LEAGUE)</div>
+        <img src="UPenn_shield_with_banner.svg.png" alt="UPenn">
+        <p>Location: Philadelphia, PA | Cost: ~$85K/year | Acceptance Rate: 6%</p>
+        <p>Strengths: Finance, Business, Economics</p>
+        <p>Recommended Majors: Finance, Economics, Accounting</p>
+        <p>Backstory: UPenn is home to the Wharton School, one of the top business schools in the world, excelling in finance and entrepreneurship.</p>
+      </div>
+
+      <div class="item college">
+        <div class="title">Dartmouth College (IVY LEAGUE)</div>
+        <img src="Dartmouth_College_shield.svg.png" alt="Dartmouth">
+        <p>Location: Hanover, NH | Cost: ~$77K/year | Acceptance Rate: 7%</p>
+        <p>Strengths: Liberal Arts, Business, Engineering</p>
+        <p>Recommended Majors: Business, Economics, Engineering</p>
+        <p>Backstory: Dartmouth is known for its strong liberal arts programs and close-knit campus community in New Hampshire.</p>
+      </div>
+
+      <div class="item college">
+        <div class="title">Brown University (IVY LEAGUE)</div>
+        <img src="Shield_of_Brown_University.svg.png" alt="Brown">
+        <p>Location: Providence, RI | Cost: ~$77K/year | Acceptance Rate: 6%</p>
+        <p>Strengths: Liberal Arts, CS, Medicine</p>
+        <p>Recommended Majors: CS, Biology, Economics</p>
+        <p>Backstory: Brown encourages a flexible curriculum with self-directed learning, ideal for students who want interdisciplinary exploration.</p>
+      </div>
+
+      <div class="item college">
+        <div class="title">Cornell University (IVY LEAGUE)</div>
+        <img src="Cornell_University_seal.svg (1).png" alt="Cornell">
+        <p>Location: Ithaca, NY | Cost: ~$76K/year | Acceptance Rate: 9%</p>
+        <p>Strengths: Engineering, Hotel Management, Agriculture</p>
+        <p>Recommended Majors: Engineering, Business</p>
+        <p>Backstory: Cornell offers a mix of private and public programs, with renowned engineering and agricultural colleges.</p>
+      </div>
+
+      <div class="item college">
+        <div class="title">Stanford University</div>
+        <img src="Seal_of_Leland_Stanford_Junior_University.svg.png" alt="Stanford">
+        <p>Location: Stanford, CA | Cost: ~$80K/year | Acceptance Rate: 4%</p>
+        <p>Strengths: Entrepreneurship, Engineering, CS, Business</p>
+        <p>Recommended Majors: CS, Engineering, Economics</p>
+        <p>Backstory: Stanford is known for its entrepreneurial spirit and proximity to Silicon Valley, making it top for tech and business.</p>
+      </div>
+
+      <div class="item college">
+        <div class="title">MIT</div>
+        <img src="MIT_Seal.svg.png" alt="MIT">
+        <p>Location: Cambridge, MA | Cost: ~$77K/year | Acceptance Rate: 7%</p>
+        <p>Strengths: Engineering, CS, Economics</p>
+        <p>Recommended Majors: CS, Engineering, Business (Sloan)</p>
+        <p>Backstory: MIT is a leader in science, technology, and innovation, producing top engineers, entrepreneurs, and researchers.</p>
+      </div>
+    </div>
+
+    <div class="back-button">
+      <a href="index.html">Home</a>
+    </div>
+  </div>
+</body>
+</html>
+

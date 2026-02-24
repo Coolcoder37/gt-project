@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dhyan's G.T Project</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      height: 100%;
+      background-color: #f5f5f5;
+    }
+
+    .splash {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #003366;
+      color: white;
+      font-size: 2.5em;
+      text-align: center;
+      animation: fadeInSplash 2s ease-in-out;
+    }
+
+    @keyframes fadeInSplash {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .home {
+      display: none;
+      min-height: 100vh;
+      background: url('homescreen.jpg') no-repeat center center;
+      background-size: cover;
+      position: relative;
+      color: #fff;
+    }
+
+    .home-content {
+      background-color: rgba(0, 0, 0, 0.6); /* faded backdrop */
+      max-width: 600px;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: left;
+      line-height: 1.8em; /* taller paragraph spacing */
+    }
+
+    .home-content h2 {
+      margin-top: 0;
+      font-size: 2em;
+      text-align: center;
+    }
+
+    .home-content p {
+      font-size: 1.1em;
+    }
+
+    .buttons {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #003366;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .buttons a:hover {
+      background-color: #0055aa;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="splash">
+  Dhyan's G.T Project
+</div>
+
+<div class="home">
+  <div class="home-content">
+    <h2>Introduction</h2>
+    <p>
+      Welcome to my GT (Gifted & Talented) project! The goal of this project is to explore 
+      various colleges and career paths, understand the costs and requirements for each, 
+      and see how education choices can shape long-term success. By researching top universities, 
+      career clusters, and salary progressions, I aim to learn how different paths connect to 
+      professional opportunities. This project also allows me to analyze personal interests 
+      and create a clear flowchart for my own career plan, helping me visualize the journey 
+      from education to my dream career in management consulting.
+    </p>
+
+    <div class="buttons">
+      <a href="colleges.html">Colleges</a>
+      <a href="careers.html">Career Clusters</a>
+      <a href="flowchart.html">My Plan</a>
+    </div>
+  </div>
+</div>
+
+<script>
+  setTimeout(() => {
+    document.querySelector('.splash').style.display = 'none';
+    document.querySelector('.home').style.display = 'block';
+  }, 2500);
+</script>
+
+</body>
+</html>
